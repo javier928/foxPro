@@ -5,7 +5,7 @@ LOCAL wNombre, Pregunta1, Pregunta2, lnPuntos
 CLEAR
 SET TALK OFF  
 
-* Declarar e inicializar la variable de puntos como numérica
+* Declarar e inicializar la variable de puntos como numÃ©rica
 lnPuntos = 0
 
 wNombre = SPACE(30)
@@ -21,6 +21,7 @@ CLEAR
 USE C:\DBASE\PREGUNTAS.DBF
 GO 1
 wLinea=Linea
+*** Linea es un campo de la tabla PREGUNTAS.DBF
 Pregunta1 = SPACE(1)
 @ 4, 5 SAY "Q1. "+wLinea+" (V/F)?: " GET Pregunta1
 READ
@@ -57,6 +58,7 @@ Pregunta3 = SPACE(1)
 READ
 
 SET TALK ON
+
 
 
 
